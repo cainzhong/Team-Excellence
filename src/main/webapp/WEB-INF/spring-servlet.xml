@@ -20,8 +20,4 @@
 		p:viewClass="org.springframework.web.servlet.view.JstlView" p:prefix="/WEB-INF/views/"
 		p:suffix=".jsp"></bean>
 
-	<!-- 完成请求和注解POJO的映射 -->
-	<bean
-		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
-
 </beans>
