@@ -1,22 +1,17 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Home &raquo; Team Excellence &raquo; Houston, TX</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="robots" content="" />
-
-    <!-- stylesheets -->
-    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <!-- stylesheets -->
+    <link rel='stylesheet' href="${pageContext.request.contextPath}/css/screen.css" type="text/css" />
     <!-- javascripts -->
-    <script type="text/javascript" src="/js/jquery.scrollTo-1.3.3.js"></script>
-    <script type="text/javascript" src="/js/jquery.localscroll-1.2.5.js"></script>
-    <script type="text/javascript" src="/js/jquery.serialScroll-1.2.1.js"></script>
-    <script type="text/javascript" src="/js/main-slider.js"></script>
-
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.scrollTo-1.3.3.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.localscroll-1.2.5.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.serialScroll-1.2.1.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/main-slider.js"></script>
+  
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -28,11 +23,13 @@
 
 </script>
 
+ <title>Home &raquo; Team Excellence</title>
+ 
 </head>
 <body>
     <div id="header" class="container_12">
         <div id="logo" class="grid_4">
-            <a href="/index.html"><img src="/img/TeamExcellence_Logo.png" class="" alt="Team Excellence" /></a>
+            <a href="${pageContext.request.contextPath}/home.do"><img src="${pageContext.request.contextPath}/img/TeamExcellence_Logo.png" class="" alt="Team Excellence" /></a>
         </div>
         <div id="navigation" class="grid_8">
             <div id="top-nav">
