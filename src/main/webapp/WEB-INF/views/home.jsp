@@ -1,8 +1,11 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
+	<title>Home &raquo; Team Excellence</title>
+	
   <!-- stylesheets -->
     <link rel='stylesheet' href="${pageContext.request.contextPath}/css/screen.css" type="text/css" />
     <!-- javascripts -->
@@ -12,7 +15,7 @@
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.serialScroll-1.2.1.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/main-slider.js"></script>
   
-<script>
+<script type="text/javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -23,34 +26,14 @@
 
 </script>
 
- <title>Home &raquo; Team Excellence</title>
- 
 </head>
 <body>
     <div id="header" class="container_12">
         <div id="logo" class="grid_4">
-            <a href="${pageContext.request.contextPath}/home.do"><img src="${pageContext.request.contextPath}/img/TeamExcellence_Logo.png" class="" alt="Team Excellence" /></a>
+            <a href="home.do"><img src="${pageContext.request.contextPath}/img/TeamExcellence_Logo.png" class="" alt="Team Excellence" /></a>
         </div>
         <div id="navigation" class="grid_8">
-            <div id="top-nav">
-                <ul>
-                    <li><a href="http://teamexcellencesurveys.com" class="login-link">login</a></li>
-                    <li><a href="/contact/Contact.aspx">Contact</a></li>
-                    <li><a href="/wellness/booksportal.html" target="blank">Books</a></li>
-                    <li><a href="http://blog.teamexcellence.com">Blog</a></li>
-                </ul>
-            </div>
-            <div id="nav">
-                <ul>
-                    <li><a href="/" id="home-link">Home</a></li>
-                    <li><a href="/strategy/strategy.html" id="strategy-link">Strategy</a></li>
-                    <li><a href="/tools/index.html" id="tools-link">Tools</a></li>
-                    <li><a href="/about/index.html" id="about-link">About</a></li>
-                    <li><a href="/training/index.html" id="training-link">Training</a></li>
-                    <li><a href="#" id="psi-enterprise-link" onclick="window.location.href = '/performance-management'" class="culture-link">PSI Enterprise</a></li>
- 
-                </ul>
-            </div>
+			<jsp:include page="navigation.jsp" flush="true"/>
         </div>
     </div>
     <div id="content" class="clearfix">
@@ -164,47 +147,7 @@
         </div>
     </div>
     <div id="footer">
-        <div class="container_12 clearfix">
-            <div class="grid_6">
-                <h2>Visit</h2>
-                <div class="grid_2 alpha">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/strategy/strategy.html">Strategy</a></li>
-                        <li><a href="/tools/index.html">Tools</a></li>
-                        <li><a href="/about/index.html">About</a></li>
-                    </ul>
-                </div>
-
-                <div class="grid_2">
-                    <ul>
-                        <li><a href="/training/index.html">Training</a></li>
-                        <li><a href="/culture/index.html">Culture</a></li>
-                        <li><a href="http://blog.teamexcellence.com">Blog</a></li>
-                    </ul>
-                </div>
-
-                <div class="grid_2 omega">
-                    <ul>
-                        <li><a href="http://teamexcellencesurveys.com">Login</a></li>
-                        <li><a href="/contact/contact.aspx">Contact</a></li>
-                        <li><a href="/wellness/booksportal.html">Books</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="grid_6">
-                <div id="rightfooter">
-                    <div class="email"><a href="mailto:info@teamexcellence.com">info@teamexcellence.com</a></div>
-                    <ul>
-                        <li>&copy; Team Excellence, Inc.</li>
-                        <li><a href="/pages/terms.html">Terms</a></li>
-                        <li><a href="/pages/privacy.html">Privacy</a></li>
-                        <li><a href="/contact/contact.aspx">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    	<jsp:include page="footer.jsp" />
     </div>
     <script type="text/javascript">
         $(function () {
