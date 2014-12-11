@@ -17,8 +17,8 @@ import com.team.excellence.model.User;
  */
 @Service
 public interface LoginService {
-	public void createLoginAccount(String userName,String password);
+	public void createLoginAccount(String email,String password);
 	public void editLoginAccount(Account account);
 	public void deleteLoginAccount(Account account);
-	public Account findAccountInfo(String userName);
+	public Account findAccountInfo(String email);
 }

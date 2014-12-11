@@ -22,7 +22,6 @@ public class Profile {
 	private String lastName;
 	private String gender;
 	private int age;
-	private String email;
 	private String address;
 
 	public String getId() {
@@ -73,14 +72,6 @@ public class Profile {
 		this.age = age;
 	}
 
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
 	public String getAddress() {
 		return address;
 	}
@@ -92,7 +83,7 @@ public class Profile {
 	public String toString() {
 		return "Profile [ id: " + id + " firstName: " + firstName
 				+ " middleName: " + middleName + " lastName: " + lastName
-				+ " gender: " + gender + " age: " + age + " email: " + email
-				+ " address: " + address + "]";
+				+ " gender: " + gender + " age: " + age + " address: "
+				+ address + "]";
 	}
 }

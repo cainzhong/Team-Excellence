@@ -10,10 +10,9 @@ package com.team.excellence.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.team.excellence.model.User;
+import com.team.excellence.model.Account;
 import com.team.excellence.service.LoginService;
 
 /**
@@ -22,6 +21,9 @@ import com.team.excellence.service.LoginService;
  */
 @Controller
 public class HomeController {
+	
+	@Autowired
+	private LoginService logService;
 	
 	@RequestMapping(value = "/navigation.do")
 	public String navigationPage() {

@@ -28,8 +28,8 @@ public class LoginServiceImpl implements LoginService {
 	/* (non-Javadoc)
 	 * @see com.team.excellence.service.LoginService#createLoginAccount(java.lang.String, java.lang.String)
 	 */
-	public void createLoginAccount(String userName, String password) {
-		Account account=new Account(userName, password);
+	public void createLoginAccount(String email, String password) {
+		Account account=new Account(email, password);
 		mongoTemplate.save(account);
 		System.out.println(account);
 	}
@@ -52,8 +52,8 @@ public class LoginServiceImpl implements LoginService {
 	/* (non-Javadoc)
 	 * @see com.team.excellence.service.LoginService#findAccountInfo(com.team.excellence.model.Account)
 	 */
-	public Account findAccountInfo(String userName) {
-		Query searchAccountQuery=new Query(Criteria.where("userName").is(userName));
+	public Account findAccountInfo(String email) {
+		Query searchAccountQuery=new Query(Criteria.where("email").is(email));
 		return mongoTemplate.findOne(searchAccountQuery, Account.class);
 	}
 	

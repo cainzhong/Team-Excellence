@@ -24,9 +24,9 @@ public class LoginController {
 	private LoginService loginService;
 
 	@RequestMapping("createAccount.do")
-	public String createLoginAccount(String userName, String password,Model model) {
-		loginService.createLoginAccount(userName, password);
-		Account account=loginService.findAccountInfo(userName);
+	public String createLoginAccount(String email, String password,Model model) {
+		loginService.createLoginAccount(email, password);
+		Account account=loginService.findAccountInfo(email);
 		model.addAttribute("account", account);
 		return "profile";
 	}
