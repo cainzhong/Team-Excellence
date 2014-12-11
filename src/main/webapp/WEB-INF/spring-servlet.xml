@@ -11,8 +11,7 @@
    	 http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
 	<!-- ③：对模型视图名称的解析，即在模型视图名称添加前后缀 -->
-	<bean id="viewResolver"
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/views/</value>
 		</property>
