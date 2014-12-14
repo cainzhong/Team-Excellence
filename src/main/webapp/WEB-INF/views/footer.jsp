@@ -6,26 +6,26 @@
         <h2>Visit</h2>
         <div class="grid_2 alpha">
             <ul>
-                <li><a href="home.do">Home</a></li>
-                <li><a href="strategy.do">Strategy</a></li>
-                <li><a href="toolsIndex.do">Tools</a></li>
-                <li><a href="aboutIndex.do">About</a></li>
+                <li><a href="home">Home</a></li>
+                <li><a href="strategy">Strategy</a></li>
+                <li><a href="toolsIndex">Tools</a></li>
+                <li><a href="aboutIndex">About</a></li>
             </ul>
         </div>
 
         <div class="grid_2">
             <ul>
-                <li><a href="trainingIndex.do">Training</a></li>
-                <li><a href="cultureIndex.do">Culture</a></li>
-                <li><a href="blog.do">Blog</a></li>
+                <li><a href="trainingIndex">Training</a></li>
+                <li><a href="cultureIndex">Culture</a></li>
+                <li><a href="blog">Blog</a></li>
             </ul>
         </div>
 
         <div class="grid_2 omega">
             <ul>
-                <li><a href="login.do">Login</a></li>
-                <li><a href="contact.do">Contact</a></li>
-                <li><a href="books.do">Books</a></li>
+                <li><a href="loginPage">Login</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="books">Books</a></li>
             </ul>
         </div>
     </div>
