@@ -38,42 +38,42 @@ public class HomeController {
 		return "home";
 	}
 
-	@RequestMapping(value = "/strategy")
+	@RequestMapping(value = "/strategy.do")
 	public String strategyPage() {
 		return "strategy";
 	}
 
-	@RequestMapping(value = "/toolsIndex")
+	@RequestMapping(value = "/toolsIndex.do")
 	public String toolIndexPage() {
 		return "tools";
 	}
 
-	@RequestMapping(value = "/aboutIndex")
+	@RequestMapping(value = "/aboutIndex.do")
 	public String aboutIndexPage() {
 		return "about/index";
 	}
 
-	@RequestMapping(value = "/trainingIndex")
+	@RequestMapping(value = "/trainingIndex.do")
 	public String trainingIndex() {
 		return "training";
 	}
 
-	@RequestMapping(value = "loginPage")
+	@RequestMapping(value = "/loginPage.do")
 	public String loginPage() {
 		return "loginPage";
 	}
 
-	@RequestMapping(value = "contact")
+	@RequestMapping(value = "contact.do")
 	public String contactPage() {
 		return "contact";
 	}
 
-	@RequestMapping(value = "books")
+	@RequestMapping(value = "books.do")
 	public String booksPage() {
 		return "books";
 	}
 
-	@RequestMapping(value = "blog")
+	@RequestMapping(value = "blog.do")
 	public String blogPage() {
 		return "blog";
 	}

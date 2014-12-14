@@ -107,19 +107,8 @@
                         <li>Performance accountability processes throughout the organization.</li>
                     </ul>
                 </div>
+                
             </div>
-
-            <!--div class="container_12 clearfix">
-                <div class="grid_12 alpha omega">
-                    <h2>Fundamental Organization Development (potentially expendable section)</h2>
-                    <p>We believe in the following fundamentals to achieve organizational development:</p>
-                    <ul class="unboxed">
-                        <li><strong>The Individual</strong>: Through competence, self-awareness and personal accountability is the basic building block of organizational success.</li>
-                        <li><strong>The Team</strong>: Through effective communication and productive relationships is the human system that sustains organizational performance.</li>
-                        <li><strong>The Company</strong>: Through a clear vision and informed leadership creates mutually motivating opportunities for both the organization &amp; employees.</li>
-                    </ul>
-                </div>
-            </div-->
         </div>
     </div>
     <div id="footer">
