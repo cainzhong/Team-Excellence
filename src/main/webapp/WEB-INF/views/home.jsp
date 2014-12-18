@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -30,7 +31,7 @@
 <body>
     <div id="header" class="container_12">
         <div id="logo" class="grid_4">
-            <a href="home.do"><img src="${pageContext.request.contextPath}/img/TeamExcellence_Logo.png" class="" alt="Team Excellence" /></a>
+            <a href="home"><img src="${pageContext.request.contextPath}/img/TeamExcellence_Logo.png" class="" alt="Team Excellence" /></a>
         </div>
         <div id="navigation" class="grid_8">
 			<jsp:include page="navigation.jsp" flush="true"/>
@@ -45,102 +46,55 @@
                 <div class="scroll">
                     <div class="scrollContainer">
                         <div class="panel banner" id="banner1">
-                            <p>
-                                Our Team Development Strategy&trade; is the result of over<br />
-                                30 years experience. We have 3 groundbreaking<br />
-                                assessment tools that are proven to increase<br />
-                                employee satisfaction, performance<br />
-                                and personal accountability.
-                            </p>
+                            <p><spring:message code="team.development.strategy.trade" /></p>
                         </div>
                         <div class="panel banner" id="banner2">
-                            <p>
-                                Find out how our proven &amp; award winning method can reduce operating costs<br />
-                                and employee turnover within your company.
-                            </p>
+                            <p><spring:message code="find.out.how" />/p>
                         </div>
                         <div class="panel banner" id="banner3">
-                            <p>
-                                We speak your language. Our assessment<br />
-                                tools are straightforward and yield results<br />
-                                you can interpret yourself.
-                            </p>
+                            <p><spring:message code="speak.your.language" /></p>
                         </div>
                     </div>
 
                 </div>
 
                 <ul class="navigation clearfix">
-                    <li><a href="#banner1"><span>Team Development Strategy</span></a></li>
-                    <li><a href="#banner2"><span>Measurable Accountability</span></a></li>
-                    <li><a href="#banner3"><span>Skip the Psycho-babble</span></a></li>
-                    <li class="learn"><a href="/strategy/strategy.html" class="btn"><span>Learn More</span></a></li>
+                    <li><a href="#banner1"><span><spring:message code="team.developments.trategy" /></span></a></li>
+                    <li><a href="#banner2"><span><spring:message code="measurable.accountability" /></span></a></li>
+                    <li><a href="#banner3"><span><spring:message code="skip.the.psycho.babble" /></span></a></li>
+                    <li class="learn"><a href="/strategy/strategy.html" class="btn"><span><spring:message code="learn.more" /></span></a></li>
                 </ul>
             </div>
-        </div>
-
-        <!--[if IE 7]>
-            <style type="text/css">
-                #slider { margin-bottom:60px!important;}
-            </style>
-        <![endif]-->
-        <!--[if IE 6]>
-        <style type="text/css">
-            #slider { display:none; }
-        </style>
-        <div class="container_12">
-            <div class="mainSlider">
-                <div class="panel banner" id="banner1">
-                    <p>Our Team Development Strategy&trade; is the result of over<br/>
-                30 years experience. We have 3 groundbreaking<br/>
-                assessment tools that are proven to increase<br/>
-                employee satisfaction, performance<br/>
-                and personal accountability.</p>
-                </div>
-                <ul class="navigation">
-                    <li class="learn"><a href="/strategy" class="btn"><span>Learn More</span></a></li>
-                </ul>
-            </div>
-        </div>
-        <![endif]-->
-
-
-        <div id="topcontent" class="container_12">
-            <!--    <div id="alert" class="grid_12">
-                    <a href="/wellness/index.html"><img src="img/book_icon1.png" class="book_icon" alt="" /></a>
-                    <a href="/wellness/index.html" class="book_arrow"><h2>WELLNESS. . . THE NEW BUSINESS CHALLENGE</h2>
-                    "There will be no wellness untill people change their behavior." &mdash; The OmniWell Model</a>
-                </div>-->
         </div>
 
         <div id="subcontent">
             <div class="container_12">
                 <div class="grid_6 news pad">
-                    <h2>Latest News</h2>
+                    <h2><spring:message code="latest.news" /></h2>
                     <div class="section">
-                        <h5>EVOLVED MANAGEMENT and INVOLVED EMPLOYEES – MANAGING EMPLOYEE ENGAGEMENT</h5>
-                        “Management” can be defined as the organization and coordination of the activities of a business to achieve defined goals and objectives. Said another way...	<a href="/news/articles/evolvedmgt.html">Read More</a>
+                        <h5><spring:message code="evolved.management.and.involved.employees" /></h5>
+                        <spring:message code="said.another.way" />
+                        <a href="/news/articles/evolvedmgt.html"><spring:message code="read.more"/></a>
                     </div>
                     <div class="section">
-                        <h5>CONTINUOUS IMPROVEMENT:  A TEAM DEVELOPMENT STRATEGY mindquad</h5>
-                        Statistics do not produce quality. People do. That could be the whole article; but let’s expand the thought. Japan has long been recognized as the genesis of the
-                        continuous improvement movement. A word in Japanese has become well known world-wide: Kaizen. Kai means  ...	<a href="/news/articles/citds.html">Read More</a>
+                        <h5><spring:message code="continuous.improvement" /></h5>
+                        <spring:message code="statistics.do.not.produce.quality" />
+                        <a href="/news/articles/citds.html"><spring:message code="read.more"/></a>
                     </div>
                     <div class="section">
-                        <h5>ENGAGEMENT <u>AND</u> ACCOUNTABILITY IN THE WORKPLACE</h5>
-                        To my way of thinking, words present a complete picture and games tied to semantics are a waste of mental energy and time. Concepts are the critical component.
-                        Case in point: a popular word in management journals has been "empower". To empower means ...	<a href="/news/articles/engagement3.html">Read More</a>
+                        <h5><spring:message code="engagement.and.accountability.in.the.workplace" /></h5>
+         				<spring:message code="to.my.way.of.thinking" /><a href="/news/articles/engagement3.html"><spring:message code="read.more"/></a>
                     </div>
                     <div class="section">
-                        <h5>EMPLOYEE ENGAGEMENT and DISCRETIONARY EFFORT</h5>
-                        Let’s begin with some concepts which are basic to the point of this article. All human behavior is motivated.  All motivation is internal and highly personal.
-                        Goals are the end toward which effort is direct... <a href="/news/articles/engagement2.html">Read More</a>
+                        <h5><spring:message code="employee.engagement.and.discretionary.effort" /></h5>
+                        <spring:message code="begin.with.some.concepts" />
+                        <a href="/news/articles/engagement2.html"><spring:message code="read.more"/></a>
                     </div>
 
-                    <a href="/news/index.html" class="readmore arrow home_news">View All News</a>
+                    <a href="/news/index.html" class="readmore arrow home_news"><spring:message code="view.all.news" /></a>
                 </div>
                 <div class="grid_6">
-                    <h2>Our Clients</h2>
+                    <h2><spring:message code="our.clients" /></h2>
                     <img src="img/client_logos_home.png" style="margin-top:12px;" alt="Team Excellence Client List" />
                 </div>
             </div>

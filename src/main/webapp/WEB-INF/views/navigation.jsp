@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <div id="top-nav">
 	<ul>
-		<li><a href="login.do" class="login-link">login</a></li>
+		<li><a href="loginPage.do" class="login-link">login</a></li>
 		<li><a href="contact.do">Contact</a></li>
 		<li><a href="books.do" target="blank">Books</a></li>
 		<li><a href="blog.do">Blog</a></li>
@@ -17,7 +17,7 @@
 		<li><a href="aboutIndex.do" id="about-link">About</a></li>
 		<li><a href="trainingIndex.do" id="training-link">Training</a></li>
 		<li><a href="#" id="psi-enterprise-link"
-			onclick="window.location.href = '/performance-management'"
+			onclick="window.locations.href = '/performance-management'"
 			class="culture-link">PSI Enterprise</a></li>
 	</ul>
 </div>

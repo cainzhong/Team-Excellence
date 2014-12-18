@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 
-import com.team.excellence.model.User;
+import com.team.excellence.model.Users;
 
 //import org.springframework.context.support.GenericXmlApplicationContext;
 
@@ -24,7 +24,7 @@ public class App {
 //		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
 		MongoOperations mongoOperation = (MongoOperations) ctx.getBean("mongoTemplate");
 
-		User user = new User("mkyong", "password123");
+		Users user = new Users("mkyong", "password123");
 
 		// save
 		mongoOperation.save(user);
@@ -36,16 +36,16 @@ public class App {
 		Query searchUserQuery = new Query(Criteria.where("username").is("mkyong"));
 
 		// find the saved user again.
-		User savedUser = mongoOperation.findOne(searchUserQuery, User.class);
+		Users savedUser = mongoOperation.findOne(searchUserQuery, Users.class);
 		System.out.println("2. find - savedUser : " + savedUser);
 
 		// update password
 		mongoOperation.updateFirst(searchUserQuery, Update.update("password", "new password"),
-				User.class);
+				Users.class);
 
 		// find the updated user object
-		User updatedUser = mongoOperation.findOne(
-				new Query(Criteria.where("username").is("mkyong")), User.class);
+		Users updatedUser = mongoOperation.findOne(
+				new Query(Criteria.where("username").is("mkyong")), Users.class);
 
 		System.out.println("3. updatedUser : " + updatedUser);
 
@@ -53,7 +53,7 @@ public class App {
 //		mongoOperation.remove(searchUserQuery, User.class);
 
 		// List, it should be empty now.
-		List<User> listUser = mongoOperation.findAll(User.class);
+		List<Users> listUser = mongoOperation.findAll(Users.class);
 		System.out.println("4. Number of user = " + listUser.size());
 
 	}

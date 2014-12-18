@@ -23,7 +23,7 @@
 
         <div class="grid_2 omega">
             <ul>
-                <li><a href="login.do">Login</a></li>
+                <li><a href="loginPage.do">Login</a></li>
                 <li><a href="contact.do">Contact</a></li>
                 <li><a href="books.do">Books</a></li>
             </ul>

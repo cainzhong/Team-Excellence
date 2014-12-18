@@ -1,18 +1,18 @@
 package com.team.excellence.controller;
+
 /**
  *@Project: Team-Excellence
  *@Author: cainzhong
  *
- *@Date: 2014Äê12ÔÂ4ÈÕ
+ *@Date: 2014ï¿½ï¿½12ï¿½ï¿½4ï¿½ï¿½
  *@Copyright: 2014 sg.nomaka.tk Inc. All rights reserved.
  */
 
-
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.team.excellence.model.Account;
 import com.team.excellence.service.LoginService;
 
 /**
@@ -21,17 +21,20 @@ import com.team.excellence.service.LoginService;
  */
 @Controller
 public class HomeController {
+
+	private static Logger logger = Logger.getLogger(HomeController.class);
 	
 	@Autowired
 	private LoginService logService;
-	
-	@RequestMapping(value = "/navigation.do")
+
+	@RequestMapping(value = "/navigation")
 	public String navigationPage() {
 		return "navigation";
 	}
 
-	@RequestMapping(value = "/home.do")
+	@RequestMapping(value = { "/", "/home","/home.do" })
 	public String homePage() {
+		logger.info("******************************************** Welcome... ********************************************");
 		return "home";
 	}
 
@@ -54,24 +57,24 @@ public class HomeController {
 	public String trainingIndex() {
 		return "training";
 	}
-	
-    @RequestMapping(value="login.do")
-    public String loginPage(){
-    	return "login";
-    }
-    
-    @RequestMapping(value="contact.do")
-    public String contactPage(){
-    	return "contact";
-    }
-    
-    @RequestMapping(value="books.do")
-    public String booksPage(){
-    	return "books";
-    }
-    
-    @RequestMapping(value="blog.do")
-    public String blogPage(){
-    	return "blog";
-    }
+
+	@RequestMapping(value = "/loginPage.do")
+	public String loginPage() {
+		return "loginPage";
+	}
+
+	@RequestMapping(value = "contact.do")
+	public String contactPage() {
+		return "contact";
+	}
+
+	@RequestMapping(value = "books.do")
+	public String booksPage() {
+		return "books";
+	}
+
+	@RequestMapping(value = "blog.do")
+	public String blogPage() {
+		return "blog";
+	}
 }

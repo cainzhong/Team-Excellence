@@ -1,7 +1,7 @@
  /**
  *@Project: Team-Excellence
  *
- *@Date: 2014Äê12ÔÂ10ÈÕ
+ *@Date: 2014ï¿½ï¿½12ï¿½ï¿½10ï¿½ï¿½
  *@Copyright: 2014 sg.nomaka.tk Inc. All rights reserved.
  */
 package com.team.excellence.service;
@@ -9,7 +9,7 @@ package com.team.excellence.service;
 import org.springframework.stereotype.Service;
 
 import com.team.excellence.model.Account;
-import com.team.excellence.model.User;
+import com.team.excellence.model.Users;
 
 /**
  * @author Cain
